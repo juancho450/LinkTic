@@ -1,0 +1,34 @@
+<div class="form-container">
+    <div class="form-card-container">
+        <form [formGroup]="postFormGroup">
+            <mat-form-field class="example-full-width">
+                <mat-label>Nombre</mat-label>
+                <input matInput placeholder="Escribe aqui.." value="" formControlName="name">
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <mat-label>Apellido</mat-label>
+                <input matInput placeholder="Escribe aqui.." value="" formControlName="lastname">
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <mat-label>Telefono</mat-label>
+                <input matInput placeholder="Escribe aqui.." value="" formControlName="phone">
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <mat-label>Correo</mat-label>
+                <input matInput placeholder="Escribe aqui.." value="" formControlName="email">
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <mat-label>Direccion</mat-label>
+                <input matInput placeholder="Escribe aqui.." value="" formControlName="address">
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <mat-label>Nacionalidad</mat-label>
+                <input matInput placeholder="Escribe aqui.." value="" formControlName="nationality">
+              </mat-form-field>
+        </form>
+
+        <div class="form-button-container">
+            <button mat-flat-button (click)="handleSave()">Ir a formulario</button>
+        </div>
+    </div>
+</div>
